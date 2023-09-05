@@ -1,4 +1,4 @@
-obj-m = jprobe_execve_4.o
+obj-m = jprobe_execve_1.o
 
 
 all:
