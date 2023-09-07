@@ -1,5 +1,5 @@
-obj-m = jprobe_execve_1.o
-
+obj-m = jprobe_execve.o
+CONFIG_MODULE_SIG=n
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
