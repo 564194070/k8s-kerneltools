@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
+#i`nclude <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/kprobes.h>
 
 
-// 构建一个动态桩点信息
+// 自定义数据结构
 struct test = 
 {
 	int test;
@@ -31,7 +31,7 @@ static struct kretprobe kret =
         	// 目标探测函数
         	symbol_name = "syscall",
         }
-}
+};
 
 // 桩点入口函数
 static int __init kretprobe_init(void)
