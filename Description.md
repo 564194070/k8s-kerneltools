@@ -43,4 +43,6 @@
 - 单步执行完成后，kprobe执行用户注册的post_handler回调函数
 - 回到被探测指令之后，正常执行
 
-###
+### 查找系统调用地址
+less /proc/kallsyms
+arch\x86\entry\syscalls\syscall\_64.tbl
